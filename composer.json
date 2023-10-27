@@ -37,8 +37,7 @@
     "johnpbloch/wordpress-core": ">=6.0",
 		"johnpbloch/wordpress-core-installer": "^2.0",
     "wpackagist-plugin/woocommerce":"*",
-    "wpackagist-plugin/tinymce-advanced":"*",
-    "bref/bref":"*"
+    "wpackagist-plugin/tinymce-advanced":"*"
   },
   "require-dev": {
     "phpmd/phpmd": "@stable",
