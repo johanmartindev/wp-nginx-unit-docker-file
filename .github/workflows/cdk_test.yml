@@ -1,0 +1,29 @@
+name: Unit Test with CDK
+on:
+  push:
+   branches-ignore:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: actions/checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+          cache: 'npm'
+          cache-dependency-path: 'aws_config/package-lock.json'
+      - run: npm install
+        working-directory: ./aws_config
+
+      - name: CDK Synth
+        uses: arnaskro/aws-cdk-v2-github-actions@v2.2.1
+        with:
+          cdk_subcommand: 'synth'
+          working_dir: './aws_config'
+      - name: CDK Test
+        run: npm run test
+        working-directory: ./aws_config
