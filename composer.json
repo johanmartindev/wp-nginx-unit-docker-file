@@ -35,9 +35,7 @@
   "require": {
     "vlucas/phpdotenv": "*",
     "johnpbloch/wordpress-core": ">=6.0",
-		"johnpbloch/wordpress-core-installer": "^2.0",
-    "wpackagist-plugin/woocommerce":"*",
-    "wpackagist-plugin/tinymce-advanced":"*"
+		"johnpbloch/wordpress-core-installer": "^2.0"
   },
   "require-dev": {
     "phpmd/phpmd": "@stable",
