@@ -1,4 +1,5 @@
 # Creating Wordpress Image
+!!! Ignore below. Will update as necessary. This is to build a docker image using nginx unit for wordpress and push to a docker registry.
 ## Development Setup
 1. Make a new developer folder `mkdir wp-dev`.
   1. Change into folder `cd wp-dev`
